@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -6,8 +7,11 @@ public class PlayerController : MonoBehaviour
     public float xRange = 15f;
     public float zRange = 9f;
     public float infinteScroll = 0;
-    public float boundaries = 0;
+    public float boundaries = 0;   
     //public GameObject projectilePrefab;
+
+    public int score;
+    public TMP_Text scoreText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +33,9 @@ public class PlayerController : MonoBehaviour
         //Method 2
 
         Vector3 moveDir = new Vector3(horizontal, 0, vertical).normalized;
-        transform.Translate(moveDir * moveSpeed * Time.deltaTime);
+        transform.Translate(moveDir * moveSpeed * Time.deltaTime, Space.World);
+
+        transform.rotation = Quaternion.LookRotation(moveDir);
 
         //Boundaries
 
@@ -88,6 +94,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-        }
+        }        
     }
 }
