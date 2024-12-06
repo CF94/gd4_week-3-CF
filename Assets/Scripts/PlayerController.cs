@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerController : MonoBehaviour
 {
@@ -94,6 +95,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-        }        
-    }
+        }
+
+        //scoreText.text = "Score: " + score;
+    }    
 }
