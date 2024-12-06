@@ -185,6 +185,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
       insertIndex: -1
       addedObject: {fileID: 959445318}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 959445324}
     - targetCorrespondingSourceObject: {fileID: 116062, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
       insertIndex: -1
       addedObject: {fileID: 192598430}
@@ -333,6 +336,7 @@ MonoBehaviour:
   infinteScroll: 0
   boundaries: 0
   score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &309967436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,8 +1179,8 @@ MonoBehaviour:
   - {fileID: 125240, guid: d3273ee892cdcf749a22b49daf393a91, type: 3}
   - {fileID: 180406, guid: 3b3cb28f974c42c4481d72da460937c9, type: 3}
   - {fileID: 140438, guid: 938147f6ad7eebe4cb99d4a14cb96757, type: 3}
-  spawnRangeX: 5
-  spawnRangeZ: 5
+  spawnRangeX: 7
+  spawnRangeZ: 7
 --- !u!1 &959445315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
@@ -1200,11 +1204,33 @@ MonoBehaviour:
   infinteScroll: 0
   boundaries: 1
   score: 0
+  scoreText: {fileID: 483853889}
 --- !u!4 &959445323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7169122e91e1981469b2b6045ddf7963, type: 3}
   m_PrefabInstance: {fileID: 95431195}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &959445324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959445315}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2, y: 3.0999997, z: 1}
+  m_Center: {x: 0, y: 1.5500003, z: 0}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,11 +1309,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4f7d6ac879a3740a3ee14bdc1ef0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 959445315}
   projectileBananna: {fileID: 1180137445707430, guid: 84cd279dfc9ea0a4b8564030182915fa, type: 3}
   projectileCarrot: {fileID: 181360, guid: bd519f706f8c5cf4dad9fed04ab5b64b, type: 3}
   projectileCookie: {fileID: 100000, guid: 10d25933610222845ad3760a855829c4, type: 3}
-  fireRate: 1
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0

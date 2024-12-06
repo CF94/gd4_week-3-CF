@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: cd4f7d6ac879a3740a3ee14bdc1ef0f0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - projectileBananna: {fileID: 1180137445707430, guid: 84cd279dfc9ea0a4b8564030182915fa, type: 3}
+  - projectileCarrot: {fileID: 181360, guid: bd519f706f8c5cf4dad9fed04ab5b64b, type: 3}
+  - projectileCookie: {fileID: 100000, guid: 10d25933610222845ad3760a855829c4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
